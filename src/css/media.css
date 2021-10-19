@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) and (min-width: 550px) {
+	nav {
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 549px) {
+	nav {
+		padding: 0px 20px;
+	}
+	menu {
+		display: flex;
+		flex-direction: column;
+	}
+	menu li {
+		margin-bottom: 10px;
+	}
+	body header .mainText h1 {
+		margin-top: -20px;
+		font-size: 40px;
+	}
+	body header .mainText p {
+		font-size: 18px;
+		padding-bottom: 20px;
+	}
+}
