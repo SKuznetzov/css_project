@@ -3,6 +3,17 @@
 		flex-direction: column;
 		justify-content: center;
 	}
+	body .expend {
+        padding: 30px 30px 10px 30px;
+	}
+	body .expend .mainText {
+		padding: 50px 0px;
+		margin-bottom: 20px;
+	}
+	body .expend .mainText h1 {
+		font-size: 30px;
+		margin-bottom: 50px;
+	}
 }
 
 @media screen and (max-width: 549px) {
@@ -22,7 +33,19 @@
 	}
 	body header .mainText p {
 		font-size: 18px;
-		padding-bottom: 20px;
+		padding: 20px 10px;
+	}
+	body .expend {
+        padding: 10px;
+	}
+	body .expend .mainText {
+		border: none;
+		padding: 30px 0px;
+		margin-bottom: 20px;
+	}
+	body .expend .mainText h1 {
+		font-size: 25px;
+		margin-bottom: 30px;
 	}
 }
 @media screen and (max-width: 1260px) {
