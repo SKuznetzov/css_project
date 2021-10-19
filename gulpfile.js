@@ -57,7 +57,7 @@ gulp.task('watch',()=>{
         server: {baseDir: "./"}
     });
     gulp.watch('./src/css/**/*.less',gulp.series('styles'))
-    // gulp.watch('./src/css/**/*.css',gulp.series('styles'))
+    gulp.watch('./src/css/**/*.css',gulp.series('styles'))
     gulp.watch('./src/js/**/*.js',gulp.series('scripts'))
     gulp.watch('./src/img/**',gulp.series('img-compress'))
     gulp.watch("./*.html").on('change',browserSync.reload);
