@@ -47,6 +47,12 @@
 		font-size: 25px;
 		margin-bottom: 30px;
 	}
+	body .our_process .steps {
+		display: block;
+	}
+	body .our_process .back_process {
+		display: none;
+	}
 }
 @media screen and (max-width: 1260px) {
     .recive {
