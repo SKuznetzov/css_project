@@ -139,9 +139,10 @@ body {
         }
     }
     .our_process {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        .steps {
+            display: none;
+        }
+        text-align: center;
         padding-top: 30px;
         padding-bottom: 15px;
         h1, p {
@@ -155,7 +156,7 @@ body {
         }
         .back_process {
             min-height: 500px;
-            min-width: 700px;
+            min-width: auto;
             background-image: url(../img/Our_process.png);
             background-position: center center;
             background-size: contain;
