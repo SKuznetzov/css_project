@@ -1,9 +1,20 @@
+@primary-color: #fc635e;
+@primary-color-dark: #e44640;
+@tomato: #db5854;
+@primary-color-rgba: rgba(255,73,73,0.75);
+@gray-light: #868686;
+@gray-dark: #414141;
+@gray-text: gray;
+@color-fff: #fff;
+@white-text: white;
+@gray-more-light: #eee;
+
 body {
     a.arrowDown {
         font-size: 30px;
         text-decoration: none;
-        color: #fc635e;
-        border: 1px solid #fc635e;
+        color: @primary-color;
+        border: 1px solid @primary-color;
         display: flex;
         justify-content: center;
         margin: 0 auto;
@@ -11,20 +22,20 @@ body {
         width: 45px;
         height: 45px;
         &:hover {
-            background: #fc635e;
-            color: white;
+            background: @primary-color;
+            color: @white-text;
         }
     }
     a.btn {
-        color: #fc635e;
+        color: @primary-color;
         text-decoration: none;
         font-size: 22px;
-        border: 2px solid #db5854;
+        border: 2px solid @tomato;
         padding: 12px 28px;
         border-radius: 8px;
         &:hover {
-        background: #db5854;
-        color: #fff;
+        background: @tomato;
+        color: @color-fff;
         }
     }
     .mainText {
@@ -32,13 +43,13 @@ body {
         h1 {
             text-transform: uppercase;
             font-size: 50px;
-            color: white;
+            color: @white-text;
             span {
-                color: #fc635e;
+                color: @primary-color;
             }
         }
         p {
-            color: white;
+            color: @white-text;
             font-size: 22px;
         }
     }
@@ -47,7 +58,7 @@ body {
         text-transform: uppercase;
         font-size: 40px;
         span {
-            color: #fc635e;
+            color: @primary-color;
         }
     }
         margin: 0 auto;
@@ -65,7 +76,7 @@ body {
             justify-content: space-around;
             align-items: center;
             >a {
-                color: white;
+                color: @white-text;
                 font-size: 25px;
                 font-weight: bold;
                 text-decoration: none;
@@ -84,12 +95,12 @@ body {
                 li {
                     padding-left: 15px;
                     a {
-                        color:white;
+                        color: @white-text;
                         font-size: 20px;
                         text-decoration: none;
                         &:hover {
-                            color: #fc635e;
-                            border-bottom: 3px solid #fc635e;
+                            color: @primary-color;
+                            border-bottom: 3px solid @primary-color;
                             padding-bottom: 5px;
                         }
                     }
@@ -102,9 +113,9 @@ body {
     .recive {
         margin-top: 0;
         text-align: center;
-        background: white;
+        background: @white-text;
         padding: 70px 50px 10px 50px;
-        color: #868686;
+        color: @gray-light;
         p {
             font-size: 22px;
             margin-bottom: 50px;
@@ -146,7 +157,7 @@ body {
         padding-top: 30px;
         padding-bottom: 15px;
         h1, p {
-            color: gray;
+            color: @gray-text;
         }
         h1 {
             text-decoration: underline;
@@ -165,7 +176,7 @@ body {
     }
     .wedo1,.wedo2,.wedo3 {
         padding: 25px;
-        background: #f2f2f2;
+        background: @gray-more-light;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -174,7 +185,7 @@ body {
             justify-content: space-around;
         }
         h1, h2, p {
-            color: gray;
+            color: @gray-text;
         }
         p {
             font-size: 18px;
@@ -182,7 +193,7 @@ body {
         }
         h2 {
             text-transform: uppercase;
-            border-left: 10px solid #fc635e;
+            border-left: 10px solid @primary-color;
             padding-left: 5px;
         }
         .left {
@@ -195,10 +206,10 @@ body {
     }
     .wedo2 {
         text-align: right;
-        background: white;
+        background: @white-text;
         h2 {
            border-left: none;
-           border-right: 10px solid #fc635e;
+           border-right: 10px solid @primary-color;
            padding-left: 0px;
            padding-right: 5px;
        }
