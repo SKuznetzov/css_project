@@ -10,6 +10,28 @@
 @gray-more-light: #eee;
 
 body {
+    h2 {
+		font-size: 35px;
+		margin: 20px 0;
+		text-transform: uppercase;
+		color: @gray-text;
+		padding-bottom: 5px;
+		display: inline-block;
+		position: relative;
+		&:before {
+			display: block;
+			content: "";
+			height: 4px;
+			width: 100%;
+			background: @gray-text;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+		span {
+            color: @primary-color;
+		}
+	 }
     a.arrowDown {
         font-size: 30px;
         text-decoration: none;
@@ -300,6 +322,39 @@ body {
                }
                
            }
+        }
+    }
+    .our_team {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: @gray-more-light;
+        margin-bottom: 10px;
+        padding: 30px;
+        .cont {
+            display: flex;	
+            justify-content: space-around;	
+            .people {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            a {
+                color: @gray-dark;
+                font-size: 10px;
+                &:hover {
+                    color: @gray-light;
+                }
+            }
+            h4 {
+               color: @gray-dark;
+               padding-bottom: 5px;
+               span {
+                   color: @primary-color;
+               }
+            }
+            p {
+               color: @gray-text;
+            }
         }
     }
 }
