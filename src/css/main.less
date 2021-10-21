@@ -221,4 +221,85 @@ body {
            order: 2;
        }
     }
+    .portfolio {
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 30px;
+        .btn {
+            margin: 40px 0;
+        }
+        .controls {
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 25px;
+            border-top: 3px solid @gray-text;
+            border-bottom: 3px solid @gray-text;
+            padding: 15px;
+            margin-bottom: 30px;
+            button {
+                color: @primary-color;
+                background: transparent;
+                border: none;
+                text-transform: uppercase;
+                font-size: 22px;
+                &:hover {
+                    color: @primary-color-dark;
+                    cursor: pointer;
+                }
+            }
+        }
+        .container-filter {
+           width: 100%;
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+           #ex1 {
+               background-image: url(../img/portfolio/1.png);
+           }
+           #ex2 {
+               background-image: url(../img/portfolio/2.png);
+           }
+           #ex3 {
+               background-image: url(../img/portfolio/3.png);
+           }
+           #ex4 {
+               background-image: url(../img/portfolio/4.png);
+           }
+           #ex5 {
+               background-image: url(../img/portfolio/5.png);
+           }
+           #ex6 {
+               background-image: url(../img/portfolio/6.png);
+           }
+           div {
+               background-size: cover;
+               background-position: center center;
+               margin: 10px;
+               width: 250px;
+               height: 180px;
+               .fil {
+                   p {
+                       margin: 0;
+                       padding: 10px;
+                   }
+                   font-size: 20px;
+                   text-transform: uppercase;
+                   color: @white-text;
+                   font-weight: bold;
+                   display: none;
+                   position: relative;
+                   margin: 0;
+                   background: url(../img/portfolio/plus.png) @primary-color-rgba;
+                   background-position: center;
+                   background-repeat: no-repeat;
+               }
+               &:hover .fil {
+                   cursor: pointer;
+                   display: block;
+               }
+               
+           }
+        }
+    }
 }
