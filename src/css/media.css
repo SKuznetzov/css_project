@@ -53,6 +53,10 @@
 	body .our_process .back_process {
 		display: none;
 	}
+	body .our_team .cont {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 @media screen and (max-width: 1260px) {
     .recive {
