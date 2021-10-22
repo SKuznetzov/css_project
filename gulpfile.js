@@ -11,8 +11,9 @@ const imagemin = require('gulp-imagemin');
 const cssFile = ['./src/css/main.less',
                  './src/css/media.css'];
 
-const jsFile = ['./src/js/main.js',
-                './src/js/lob.js'];
+const jsFile = [
+                './src/js/mixitup.min.js',
+                './src/js/main.js'];
    
 gulp.task('styles',()=>{
     return gulp.src(cssFile)
